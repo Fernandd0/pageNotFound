@@ -1,0 +1,80 @@
+:root{
+    --font-family: "Roboto", sans-serf;
+    --normal-font: 15px;
+    --bold-font: 30px;
+    --bolder-font: 40px;
+    --primary-color: #fff;
+    --secondary-color: #11223c;
+    --third-color: #333333;
+    --primary-shadow: rgba(0, 0, 0, 0.1);
+    --secondary-shadow: #fafafa;
+    --bottom-margin: 0.5rem;
+    --bottom-margin-2: 1rem;
+    --line-height: 1.7rem;
+    --transition: 0.4s;
+}
+/*General*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: var(--font-family);
+}
+
+/*Header*/
+.c-header{
+    text-align: center;
+    padding: 2em 0;
+    color: var(--third-color);
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    box-shadow: 0 3px 5px var(--primary-shadow);
+    border-radius: 0.4rem;
+    background-color: #fff;
+}
+.header-title{
+    padding-bottom: .5em;
+    font-size: var(--bolder-font);
+}
+
+/*Content pages*/
+.c-pages{
+    gap: 1em;
+    width: 400px;
+    margin: 3em auto;
+}
+.page-card {
+  text-align: center;
+  padding: 1em;
+  margin: 1em;
+  transition: box-shadow 0.3s ease;
+  border-radius: 0.5em;
+  border: 0.5px solid var(--third-color);
+  cursor: pointer;
+}
+.page-card:hover {
+    box-shadow: 0 0.5em 0.8em var(--third-color);
+    border: 0.5px solid var(--primary-color);
+}
+.page-title {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.page-pic {
+    width: 60%;
+    height: 60%;
+}
+
+/*Footer*/
+.c-footer{
+    padding: 1em;
+    box-shadow: 4px 0 0 3px var(--primary-shadow);
+    border-radius: 0.4rem;
+}
+.footer-text{
+    text-align: center;
+    line-height: 1.5em;
+}
