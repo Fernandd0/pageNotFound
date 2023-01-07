@@ -1,5 +1,6 @@
 :root{
     --font-family: 'Varela Round', sans-serif;
+    --font-family-2: 'Space Grotesk', sans-serif;
     --normal-font: 10px;
     --bold-font: 15px;
     --bolder-font: 25px;
@@ -37,11 +38,17 @@
     border-radius: 0.4rem;
     background-color: #fff;
 }
-.header-title{
-    padding-bottom: 0 0 .5em 0;
+.header-title a{
+    font-family: var(--font-family);
+    padding: 0 0 .4em 0;
     font-size: 35px;
     color: var(--fourth-color);
-    text-shadow: 0px 1px 0px var(--third-color);
+    text-decoration: none;
+}
+.header-title a:hover{
+    font-weight: bold;
+    font-size: 37px;
+    transition: 0.3s ease;
 }
 .header-text{
     line-height: var(--line-height);
@@ -87,6 +94,29 @@
     color: var(--fourth-color);
     text-decoration: underline;
 }
+
+/*Tool*/
+.c-tool{
+    display: flex;
+    position: absolute;
+    margin: 0 1.5em;
+    display: none;
+}
+.page-tool-link{
+    display: none;
+}
+.page-tool{
+    background: none;
+    border: none;
+}
+.page-card:hover > .c-tool{
+    display: block;
+}
+.page-tool:active{
+    transform: scale(.8);
+}
+/*End Tool*/
+
 .page-title {
     font-size: var(--bolder-font);
     padding: .5em;
@@ -97,9 +127,9 @@
 }
 .page-details {
     font-size: var(--bold-font);
-    margin: .5em 1em 1em 1em;
+    margin: .5em 1.5em 1em 1.5em;
 }
-.page-link{
+.page-link {
     font-size: var(--bold-font);
     text-decoration: none;
     color: var(--third-color);
