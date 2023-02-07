@@ -5,7 +5,7 @@
     <img align="center" alt="javascript" src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E"/>
 </div></br>
 
-<a href="https://fernandd0.github.io/portfolio/">Web Site</a> donde encontraras 404 pages, de uso gratuito.
+<a href="https://fernandd0.github.io/pagesNotFound/">Web Site</a> donde encontraras 404 pages, de uso gratuito.
 
 ![PAGESNOTFOUND](assets/img/pagesNotFound.png)
 
